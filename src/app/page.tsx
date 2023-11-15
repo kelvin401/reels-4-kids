@@ -49,11 +49,11 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid text-center">
+      <div className="w-full flex flex-col items-center justify-center text-center">
         {orderAnimals.map((animal) => (
           <a
             href="/"
-            className="w-screen group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="w-[500px] flex flex-col items-center justify-center rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_blank"
             rel="noopener noreferrer"
             key={animal.id}
@@ -66,7 +66,7 @@ export default function Home() {
               priority
               className="rounded"
             />
-            <h2 className={`text-2xl font-semibold capitalize`}>
+            <h2 className={`text-2xl mt-4 font-semibold capitalize`}>
               {animal.name}
             </h2>
           </a>
