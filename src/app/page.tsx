@@ -52,8 +52,8 @@ export default function Home() {
       <div className="grid text-center">
         {orderAnimals.map((animal) => (
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            href="/"
+            className="w-screen group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_blank"
             rel="noopener noreferrer"
             key={animal.id}
@@ -61,8 +61,8 @@ export default function Home() {
             <Image
               src={animal.img}
               alt={animal.name}
-              height={300}
-              width={300}
+              height={500}
+              width={500}
               priority
               className="rounded"
             />
